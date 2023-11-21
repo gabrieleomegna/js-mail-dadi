@@ -1,3 +1,6 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
 .wrapper {
     display: flex;
     justify-content: center;
@@ -15,6 +18,14 @@ p {
 
 button {
     margin-bottom: 3rem;
+    padding: 1rem 2rem;
+    background-color: rgb(0, 106, 255);
+    color: white;
+    margin-right: 1rem;
+    border-radius: 10px;
+}
+button#winner {
+    text-transform: uppercase;
 }
 .first-two-p {
     width: 50%;
