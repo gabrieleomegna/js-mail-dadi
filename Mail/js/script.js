@@ -12,11 +12,11 @@ const wrapperElement = document.querySelector ('div.wrapper');
 const writeIsMailFound = document.createElement ('p');
 wrapperElement.appendChild (writeIsMailFound);
 
-let isMailFound = false;
-
 const btnElement = document.querySelector ('button');
 btnElement.addEventListener ('click', function (){
     const userEmailElement = document.querySelector('input#user-email').value;
+    let isMailFound = false;
+    
     for (let i = 0; i < emailArray.length; i++) {
         if (userEmailElement == emailArray[i]) {
             isMailFound = true;
