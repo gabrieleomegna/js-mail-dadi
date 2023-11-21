@@ -28,6 +28,7 @@ computerBtnElement.addEventListener ('click', function () {
     wrapperElement.appendChild(writeComputerNum);
 })
 
+
 const writeWinner = document.createElement ('p');
 
 const winnerBtnElement = document.querySelector ('button#winner');
