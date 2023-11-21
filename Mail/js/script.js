@@ -7,7 +7,7 @@ const emailArray = [
     'topolino@bellamail.com', 
     'paperino@bellamail.com'
 ];
-const userEmail = prompt ('Write your email');
+// const userEmail = prompt ('Write your email');
 let isMailFound = false;
 
 
