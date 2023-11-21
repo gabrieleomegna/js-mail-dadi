@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 6rem;
+    width: 80%;
+}
+.container {
+    width: 100%;
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+
+button {
+    margin-bottom: 3rem;
+}
+.first-two-p {
+    width: 50%;
+}
