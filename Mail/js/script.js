@@ -7,18 +7,24 @@ const emailArray = [
     'topolino@bellamail.com', 
     'paperino@bellamail.com'
 ];
-// const userEmail = prompt ('Write your email');
+
+const wrapperElement = document.querySelector ('div.wrapper');
+const writeIsMailFound = document.createElement ('p');
+wrapperElement.appendChild (writeIsMailFound);
+
 let isMailFound = false;
 
-
-for (let i = 0; i < emailArray.length; i++) {
-    if (userEmail == emailArray[i]) {
-        isMailFound = true;
+const btnElement = document.querySelector ('button');
+btnElement.addEventListener ('click', function (){
+    const userEmailElement = document.querySelector('input#user-email').value;
+    for (let i = 0; i < emailArray.length; i++) {
+        if (userEmailElement == emailArray[i]) {
+            isMailFound = true;
+        }
     }
-}
-if (isMailFound) {
-    console.log ('Email has been verified, access guaranteed');
-} else {
-    console.log ('Unrecognized email, access denied');
-}
-
+    if (isMailFound) {
+        writeIsMailFound.innerHTML = 'Email has been verified, access guaranteed';
+    } else {
+        writeIsMailFound.innerHTML = 'Unrecognized email, access denied';
+    }
+})
